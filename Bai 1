@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdint.h>
+uint8_t var; // 8bit= 1byte      2^8 = 256     0 - 255
+// int8_t var //8bit= 1byte      2^8 = 256  /2  = 128 -128 0 - 127
+// float
+//double 8 byte
+// char
+//unsign ...
+int test()// hàm con
+{
+    return 5;
+}
+void hienthi(uint16_t id,char* ten, uint8_t tuoi)// hàm trả về
+{
+     printf("ID: %d,Ten: %s,Tuoi: %d\n",id,ten,tuoi);
+}
+/*int main(int argc, char const *argv)
+{
+    var = 255;//300 loi // <0 loi
+    printf("size: %lu byte\n", sizeof(var));
+    printf("var = %d\n",var);
+    return 0;
+}*/
+uint8_t tong(uint8_t a,uint8_t b)
+{
+    return a+b;
+}
+float thuong(uint8_t a,uint8_t b)
+{
+    if (b==0)
+    {
+        printf("ERROR !! mau bang 0\n");
+    }
+    return (float)a/b;
+}
+int main()
+{
+    //printf("ID: 1001,Ten: Hoang,Tuoi: 19\n");
+    //printf("ID: 1002,Ten: QUAN,Tuoi: 13\n");
+    //printf("ID: 1003,Ten: NAM,Tuoi: 12\n");
+    //printf("ID: 1004,Ten: TUAN,Tuoi: 15\n");
+    hienthi(1000,"HOANG",19);
+    hienthi(1001,"QUAN",18);
+    hienthi(1002,"NAM",17);
+    hienthi(1003,"TUAN",13);
+
+
+
+    printf("Tong a va b: %d\n",tong(7,8));
+    return 0;
+}
