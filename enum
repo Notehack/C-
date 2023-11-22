@@ -1,0 +1,99 @@
+# C-
+C cơ bản
+#include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+enum Tuan
+{
+    THU_HAI = 2,
+    THU_BA,
+    THU_TU,
+    THU_NAM,
+    THU_SAU = 30,
+    THU_BAY,
+    CHU_NHAT
+};
+/*typedef enum(
+    THU_HAI = 2,
+    THU_BA,
+    THU_TU,
+    THU_NAM,
+    THU_SAU = 30,
+    THU_BAY,
+    CHU_NHAT
+) Tuan;*/
+// typedef struct
+/*{
+    int ngay;
+    int thang;
+    int nam;
+    Tuan tuan
+} thoigian;
+nhap vao ngay thang nam bat ky :vd : 17/02/1999 -> thu 5
+// 10/10/2000 -> thu7 moc 
+thang co bao nhieu ngay nam nhuan
+ typedef enum()
+ {
+    THANG_MOT,
+    THANG_HAI,
+ }thang;
+ const thoigian mocthoigian + {10,10,2022,thu nam}
+ thoigian nhapthongtin(int ngay,int thang, int nam)
+ {
+    thoigian thoigian
+    return 0;
+ }
+*/
+
+void hienthi(Tuan tuan)
+{
+    switch(tuan)
+    {
+        case THU_HAI:
+            printf("Thu hai\n");
+        break;
+        case THU_BA:
+            printf("Thu ba\n");
+        break;    
+    }
+}
+
+/*int main(int argc,char const *argv[])
+{
+    enum Tuan tuan;
+    tuan = THU_BA;
+ printf("Test: %d\n", THU_HAI);
+ printf("Test: %d\n", THU_BA);
+ printf("Test: %d\n", THU_TU);
+ printf("Test: %d\n", THU_NAM);
+ printf("Test: %d\n", THU_SAU);
+ printf("Test: %d\n", THU_BAY);
+ printf("Test: %d\n", CHU_NHAT);
+}*/
+/*
+struct
+struct Nghiem
+{
+    float x1;
+    float x2;
+};
+*/
+typedef struct{
+    float x1;
+    float x2;
+}Nghiem;
+/*struct Nghiem
+{
+    float x1;
+    float x2;
+};*/
+int main(int argc,char const *argv[])
+{
+    /*struct*/ Nghiem nghiem = {10.3,15.7};//{.x2 = ....,.x1= ..}
+    nghiem.x1 = 10.3;
+    nghiem.x2 = 15.7;
+    struct{
+        int a;
+        int b;
+    }var;
+}
